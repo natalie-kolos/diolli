@@ -1,0 +1,6 @@
+.btn {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
