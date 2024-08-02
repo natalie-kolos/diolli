@@ -67,7 +67,7 @@ a {
 }
 @media (max-width: 1199px) {
   .header .nav-lang,
-  .header .social-icons {
+.header .social-icons {
     display: none;
   }
 }
@@ -103,9 +103,7 @@ a {
   padding-bottom: 32px;
 }
 .header .navbar-main .navbar-nav {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   width: 100%;
 }
 .header .navbar-main .navbar-nav .nav-item .nav-link {
@@ -126,7 +124,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2D5340), color-stop(33.18%, rgba(45, 83, 64, 0)), to(rgba(45, 83, 64, 0)));
   background: linear-gradient(180deg, #2D5340 0%, rgba(45, 83, 64, 0) 33.18%, rgba(45, 83, 64, 0) 100%);
 }
 
@@ -135,16 +132,11 @@ a {
 }
 
 .navbar-custom {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .social-icons {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 0;
 }
@@ -162,8 +154,7 @@ a {
   position: absolute;
   top: 56%;
   left: 50%;
-  -webkit-transform: translate(-50%, -44%);
-          transform: translate(-50%, -44%);
+  transform: translate(-50%, -44%);
   text-align: center;
   color: white;
 }
@@ -179,29 +170,16 @@ a {
 }
 
 .content-intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10%;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
 }
 .content-intro .content-intro_aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   min-width: 30%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   padding: 12px 0;
 }
 .content-intro .content-intro_aside h3 {
