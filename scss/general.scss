@@ -1,0 +1,227 @@
+@import "../scss/vars-custom.scss";
+$green:#0A4833;
+$yellow: #CBA35E;
+$input-btn-padding-y: .625rem;
+$input-btn-padding-x: 1.5rem;
+
+$primary: $green;
+$secondary: $yellow;
+
+.btn-secondary {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $neutral;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-secondary;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-fluid-custom {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+.section-base {
+    padding: 80px 0;
+
+    @media (max-width: #{$mobile-sm}) {
+        padding: 40px 0;
+    }
+}
+
+.section-base-sm {
+    padding: 40px 0;
+
+    @media (max-width: #{$mobile-sm}) {
+        padding: 12px;
+    }
+}
+
+.section-base__description{
+    h3 {
+        color: $primary;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 3.04px;
+        text-transform: uppercase;
+        @media (max-width: #{$mobile-sm}) {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.70;
+        @media (max-width: #{$mobile-sm}) {
+            font-size: 1rem;
+        }
+    }
+}
+
+//section-branded
+
+.section-branded {
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+
+    h4 {
+        color: $primary;
+        font-family: $font-primary;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        color: $font-color-base;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.70;
+        font-family: $font-primary;
+
+        @media (max-width: #{$mobile-sm}) {
+            font-size: 1.125rem;
+        }
+    }
+
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 56%;
+        width: 540px;
+        height: 100%;
+        background-image: url('../img/brand-element-light.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    @media (max-width: #{$mobile-sm}) {
+        &::before {
+            top: auto;
+            right: 0;
+            left: auto;
+            width: 220px;
+            height: 189px;
+            z-index: 10;
+            bottom: -96px;
+        }
+    }
+
+    .content-intro {
+        display: flex;
+        gap: 10%;
+        align-items: stretch;
+        padding: 120px 0;
+
+        @media (max-width: #{$mobile-sm}) {
+            flex-direction: column;
+            padding: 40px 0;
+        }
+
+        a {
+            color: $primary;
+        }
+
+
+        .content-intro_aside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 30%;
+            align-items: flex-end;
+            padding: 12px 0;
+
+            @media (max-width: #{$mobile-sm}) {
+                align-items: flex-start;
+            }
+
+            .link-arrow {
+                @media (max-width: #{$mobile-sm}) {
+                    display: none;
+                }
+            }
+
+
+        }
+
+        .content-intro_description {
+
+
+            .link-arrow {
+                @media (min-width: #{$mobile-sm}) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.section-branded-dark {
+        background-color: $primary;
+        color: white;
+
+        a {
+            color: $secondary;
+        }
+
+        &::before {
+            background-image: url('../img/brand-element-dark.svg');
+        }
+
+        @media (max-width: #{$mobile-sm}) {
+            &::before {
+                top: auto;
+                right: auto;
+                left: auto;
+                width: 100%;
+                height: 100%;
+                bottom: auto;
+                background-size: cover;
+                background-position: center;
+                opacity: .2;
+                z-index: -1;
+            }
+        }
+
+        h4 {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            opacity: .8;
+        }
+
+    }
+}

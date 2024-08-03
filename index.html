@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="scss/dist/style.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="scss/dist/custom.css" rel="stylesheet">
+    <link href="scss/dist/general.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,18 +27,18 @@
                             <a class="nav-link" href="#">EN</a>
                         </li>
                     </ul>
-                    <a class="navbar-brand" href="#"><img src="img/logo-main.svg" alt=""></a>
+                    <a class="navbar-brand" href="#"><img class="img-fluid" src="scss/img/logo-main.svg" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <ul class="navbar-nav social-icons">
-                        <li><a href="#"><img src="img/icons/icon-fb.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/icon-instagram.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/icon-twitter-x.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/icon-youtube.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/icon-telegram.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icons/icon-quora.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-fb.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-twitter-x.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-youtube.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-telegram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-quora.svg" alt=""></a></li>
                     </ul>
                 </div>
             </nav>
@@ -82,21 +84,84 @@
         </div>
     </header>
     <main>
-        <section class="section-base section-branded">
+        <section class="section-base section-branded my-2">
             <div class="container-lg">
                 <div class="content-intro">
                     <div class="content-intro_aside">
-                        <h3>Who We Are</h3>
-                        <p><a href="#" class="link-arrow">Learn More</a></p>
+                        <h4>Who We Are</h4>
+
+                        <a href="#" class="link-arrow">Learn More <i class="bi bi-arrow-right"></i></a>
                     </div>
                     <div class="content-intro_description">
-                        <p>Figma ipsum component variant main layer Text connection draft slice list community. </p>
+                        <h3>Figma ipsum component variant main layer Text connection draft slice list community. </h3>
+                        <a href="#" class="link-arrow">Learn More <i class="bi bi-arrow-right"></i> </a>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section-base-sm">
+            <div class="container-fluid p-0">
+                <div class="levitating-imgs">
+                    <div class="levitating-imgs__col">
+                        <img class="img-fluid" src="https://via.placeholder.com/335x335"
+                            srcset="https://via.placeholder.com/335x335 1x, https://via.placeholder.com/670x670 2x">
+                        <img class="img-fluid" src="https://via.placeholder.com/335x335"
+                            srcset="https://via.placeholder.com/335x335 1x, https://via.placeholder.com/670x670 2x">
+                    </div>
+                    <div class="levitating-imgs__col">
+                        <img class="img-fluid" src="https://via.placeholder.com/625x416"
+                            srcset="https://via.placeholder.com/625x416 1x, https://via.placeholder.com/1250x832 2x">
+                        <div class="levitating-imgs__col__description section-base__description">
+                            <h3>The Team</h3>
+                            <p>Figma ipsum component variant main layer Text connection draft slice list community. </p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="levitating-imgs__col">
+                        <img class="img-fluid" src="https://via.placeholder.com/335x335"
+                            srcset="https://via.placeholder.com/335x335 1x, https://via.placeholder.com/670x670 2x">
+                        <img class="img-fluid" src="https://via.placeholder.com/335x335"
+                            srcset="https://via.placeholder.com/335x335 1x, https://via.placeholder.com/670x670 2x">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-branded section-branded-dark">
+            <div class="container-lg">
+                <div class="content-intro">
+                    <div class="content-intro_aside">
+                        <h4>Psychology</h4>
 
-
-
+                        <a href="#" class="link-arrow">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    <div class="content-intro_description">
+                        <h3>Figma ipsum component variant main layer Text connection draft slice list community. </h3>
+                        <p>Figma ipsum component variant main layer Text connection draft slice list community. </p>
+                        <a href="#" class="link-arrow">Learn More <i class="bi bi-arrow-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid p-0">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-6">
+                        <div class="centered-block-wrap">
+                            <div class="section-base__description">
+                                <h3>Coaching</h3>
+                                <p>Link object project edit effect effect subtract slice content. Shadow prototype
+                                    community pixel thumbnail strikethrough flatten. Move inspect clip layout prototype
+                                    union auto stroke.</p>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="https://via.placeholder.com/1000x1000"
+                            srcset="https://via.placeholder.com/1000x1000 1x, https://via.placeholder.com/2000x2000 2x">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
