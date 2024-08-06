@@ -63,6 +63,22 @@ form {
     @media (max-width: #{$mobile-sm}) {
         padding: 40px 0;
     }
+
+    .title {
+        text-align: center;
+        color: $primary;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        @media (max-width: #{$mobile-sm}) {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+        }
+    }
 }
 
 .section-base-sm {
@@ -177,7 +193,7 @@ form {
 
         @media (max-width: #{$mobile-sm}) {
             flex-direction: column;
-            padding: 40px 0;
+            padding: 0;
         }
 
         a {
@@ -241,6 +257,13 @@ form {
                 background-position: center;
                 opacity: .2;
                 z-index: -1;
+            }
+        }
+        .content-intro {
+    
+            @media (max-width: #{$mobile-sm}) {
+                
+                padding: 40px 0;
             }
         }
 
@@ -312,16 +335,18 @@ footer {
     }
 }
 
-.slick-prev{
+.slick-prev {
     left: 0;
+
     &::before {
-    content: url('../img/icons/icon-prev.svg');
-}
+        content: url('../img/icons/icon-prev.svg');
+    }
 }
 
-.slick-next{
+.slick-next {
     right: 0;
-&::before {
-    content: url('../img/icons/icon-next.svg');
-}
+
+    &::before {
+        content: url('../img/icons/icon-next.svg');
+    }
 }

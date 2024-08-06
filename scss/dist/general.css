@@ -51,6 +51,23 @@ form label {
     padding: 40px 0;
   }
 }
+.section-base .title {
+  text-align: center;
+  color: #0A4833;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .section-base .title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+}
 
 .section-base-sm {
   padding: 40px 0;
@@ -154,7 +171,7 @@ form label {
 @media (max-width: 768px) {
   .section-branded .content-intro {
     flex-direction: column;
-    padding: 40px 0;
+    padding: 0;
   }
 }
 .section-branded .content-intro a {
@@ -205,6 +222,11 @@ form label {
     background-position: center;
     opacity: 0.2;
     z-index: -1;
+  }
+}
+@media (max-width: 768px) {
+  .section-branded.section-branded-dark .content-intro {
+    padding: 40px 0;
   }
 }
 .section-branded.section-branded-dark h4 {
