@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Diolli</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link href="scss/dist/style.css" rel="stylesheet">
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="scss/dist/custom.css" rel="stylesheet">
@@ -13,67 +15,89 @@
 
 <body>
     <header class="header header-main">
-        <div class="container-fluid container-fluid-custom">
-            <nav class="navbar navbar-expand-xl navbar-top">
-                <div class="container-fluid">
-                    <ul class="navbar-nav nav-lang">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">UA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">RU</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">EN</a>
-                        </li>
-                    </ul>
-                    <a class="navbar-brand" href="#"><img class="img-fluid" src="scss/img/logo-main.svg" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
-                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <ul class="navbar-nav social-icons">
-                        <li><a href="#"><img src="scss/img/icons/icon-fb.svg" alt=""></a></li>
-                        <li><a href="#"><img src="scss/img/icons/icon-instagram.svg" alt=""></a></li>
-                        <li><a href="#"><img src="scss/img/icons/icon-twitter-x.svg" alt=""></a></li>
-                        <li><a href="#"><img src="scss/img/icons/icon-youtube.svg" alt=""></a></li>
-                        <li><a href="#"><img src="scss/img/icons/icon-telegram.svg" alt=""></a></li>
-                        <li><a href="#"><img src="scss/img/icons/icon-quora.svg" alt=""></a></li>
-                    </ul>
-                </div>
-            </nav>
-            <nav class="navbar navbar-expand-xl navbar-main">
-                <div class="collapse navbar-collapse" id="navbarMain">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Meet the team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Matchmaking Process</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Coaching</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Romance and Traveling</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Psychological Approach</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mission and Values</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Books</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="navigation">
+            <div class="container-fluid container-fluid-custom">
+                <nav class="navbar navbar-expand-xl navbar-top">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav nav-lang">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">UA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">RU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EN</a>
+                            </li>
+                        </ul>
+                        <a class="navbar-brand" href="#"><img class="img-fluid" src="scss/img/logo-main.svg" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarMain" aria-controls="navbarText" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="navbar-nav social-icons">
+                            <li><a href="#"><img src="scss/img/icons/icon-fb.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-instagram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-twitter-x.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-youtube.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-telegram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-quora.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-expand-xl navbar-main">
+                    <div class="collapse navbar-collapse" id="navbarMain">
+                        <ul class="navbar-nav mx-auto nav-main">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Meet the team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Matchmaking Process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Coaching</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Romance and Traveling</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Psychological Approach</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mission and Values</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Books</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav social-icons">
+                            <li><a href="#"><img src="scss/img/icons/icon-fb.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-instagram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-twitter-x.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-youtube.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-telegram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="scss/img/icons/icon-quora.svg" alt=""></a></li>
+                        </ul>
+                        <ul class="navbar-nav nav-lang">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">UA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">RU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EN</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
         </div>
         </nav>
         <div class="header-content">
@@ -142,9 +166,9 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="bg-white">
             <div class="container-fluid p-0">
-                <div class="row flex-column-reverse flex-md-row">
+                <div class="row g-0 flex-column-reverse flex-md-row">
                     <div class="col-md-6">
                         <div class="centered-block-wrap">
                             <div class="section-base__description">
@@ -163,13 +187,232 @@
                 </div>
             </div>
         </section>
+        <section class="socials">
+            <div class="container-fluid container-fluid-custom">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="cosial-block">
+                            <div class="cosial-block__title">
+                                <span>tiktok</span>
+                                <hr>
+                            </div>
+                            <img class="img-fluid" src="https://via.placeholder.com/360x410">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cosial-block">
+                            <div class="cosial-block__title">
+                                <span>youtube</span>
+                                <hr>
+                            </div>
+                            <img class="img-fluid" src="https://via.placeholder.com/360x410">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cosial-block">
+                            <div class="cosial-block__title">
+                                <span>podcast</span>
+                                <hr>
+                            </div>
+                            <img class="img-fluid" src="https://via.placeholder.com/360x410">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cosial-block">
+                            <div class="cosial-block__title">
+                                <span>Telegram</span>
+                                <hr>
+                            </div>
+                            <img class="img-fluid" src="https://via.placeholder.com/360x410">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cosial-block">
+                            <div class="cosial-block__title">
+                                <span>Quora</span>
+                                <hr>
+                            </div>
+                            <img class="img-fluid" src="https://via.placeholder.com/360x410">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cosial-block">
+                            <div class="cosial-block__title">
+                                <span>Instagram</span>
+                                <hr>
+                            </div>
+                            <img class="img-fluid" src="https://via.placeholder.com/360x410">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-branded section-branded-dark section-branded__shifted">
+            <div class="container-fluid container-fluid-custom">
+                <div class="carousel_one-item carousel-books">
+                    <div class="carousel-books__block-wrap">
+                        <div class="carousel-books__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/460x490"
+                                srcset="https://via.placeholder.com/460x490 1x, https://via.placeholder.com/920x980 2x">
+                            <div class="carousel-books__block__description">
+                                <span class="subtitle">Books</span>
+                                <h3 class="title">Underline flows figma object layout team font. Slice frame flatten
+                                    rotate flatten ellipse distribute. </h3>
+                                <p>Scrolling rotate project connection image select group flatten. Pencil pen slice
+                                    image ellipse.</p>
+                                <div class="d-flex gap-3">
+                                    <div class="btn btn-outline-secondary">Lear More</div>
+                                    <div class="btn btn-secondary">Buy Now</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-books__block-wrap">
+                        <div class="carousel-books__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/460x490"
+                                srcset="https://via.placeholder.com/460x490 1x, https://via.placeholder.com/920x980 2x">
+                            <div class="carousel-books__block__description">
+                                <span class="subtitle">Books</span>
+                                <h3 class="title">Underline flows figma object layout team font. Slice frame flatten
+                                    rotate flatten ellipse distribute. </h3>
+                                <p>Scrolling rotate project connection image select group flatten. Pencil pen slice
+                                    image ellipse.</p>
+                                <div class="d-flex gap-3">
+                                    <div class="btn btn-outline-secondary">Lear More</div>
+                                    <div class="btn btn-secondary">Buy Now</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-books__block-wrap">
+                        <div class="carousel-books__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/460x490"
+                                srcset="https://via.placeholder.com/460x490 1x, https://via.placeholder.com/920x980 2x">
+                            <div class="carousel-books__block__description">
+                                <span class="subtitle">Books</span>
+                                <h3 class="title">Underline flows figma object layout team font. Slice frame flatten
+                                    rotate flatten ellipse distribute. </h3>
+                                <p>Scrolling rotate project connection image select group flatten. Pencil pen slice
+                                    image ellipse.</p>
+                                <div class="d-flex gap-3">
+                                    <div class="btn btn-outline-secondary">Lear More</div>
+                                    <div class="btn btn-secondary">Buy Now</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-base">
+            <div class="container-fluid container-fluid-custom">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                        <div class="section-base__description text-center">
+                            <h3>schedule a consultation</h3>
+                            <p>Link object project edit effect effect subtract slice content. Shadow prototype
+                                community pixel thumbnail strikethrough flatten. Move inspect clip layout prototype
+                                union auto stroke.</p>
+                            <form class="form-redused-width mt-5">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingYourName"
+                                        placeholder="YourName">
+                                    <label for="floatingYourName">YourName</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" id="floatingPhone" placeholder="Phone">
+                                    <label for="floatingPhone">Phone</label>
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid container-fluid-custom">
+                <div class="d-flex flex-column align-items-center">
+                    <a class="navbar-brand" href="#"><img class="img-fluid mb-3" src="scss/img/logo-main-light.svg"
+                            alt=""></a>
+                    <ul class="navbar-nav social-icons mb-4">
+                        <li><a href="#"><img src="scss/img/icons/icon-fb-primary.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-instagram-primary.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-twitter-x-primary.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-youtube-primary.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-telegram-primary.svg" alt=""></a></li>
+                        <li><a href="#"><img src="scss/img/icons/icon-quora-primary.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="carousel-five-items badges-carousel mb-4">
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                    <div class="badges-carousel__block-wrap">
+                        <div class="badges-carousel__block">
+                            <img class="img-fluid" src="https://via.placeholder.com/114x114"
+                                srcset="https://via.placeholder.com/228x228 1x, https://via.placeholder.com/228x228 2x">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid container-fluid-custom">
+                    <p>© Copyright 2024</p>
+                </div>
+            </div>
+        </footer>
     </main>
 
-
-    <script src="../diolli/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
-    </script>
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../diolli/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
 </html>
