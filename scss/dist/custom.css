@@ -783,3 +783,31 @@ blockquote {
   align-items: center;
   gap: 40px;
 }
+
+.reviews .review-block {
+  padding: 48px 64px;
+  padding-bottom: 24px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.reviews .review-block p {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.reviews .review-block p.name {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.blog .blog-item {
+  padding: 48px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.blog .blog-item .row {
+  align-items: center;
+}
