@@ -427,4 +427,77 @@
             }
         }
     }
+
+    &.team-featured {
+        .team-card {
+            display: flex;
+
+            @media (max-width: #{$tablet-xl}) {
+                flex-direction: column;
+            }
+
+            .team-card__description {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.books {
+    .book-block__wrap{
+        .row{
+            @media (max-width: #{$mobile-sm}) {
+                flex-direction: column-reverse;
+            }  
+        }
+        &:nth-child(odd) {
+            background-color: white;
+        }
+        &:nth-child(even) {
+            .row{
+                flex-direction: row-reverse;
+                @media (max-width: #{$mobile-sm}) {
+                    flex-direction: column-reverse;
+                } 
+            }
+        }
+    }
+
+    .book-block {
+        display: flex;
+        align-items: center;
+        padding: 80px 0;
+
+        
+
+        h3 {
+            color: $primary;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+
+            .price-title {
+                font-size: 1.375rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.7;
+                text-transform: uppercase;
+            }
+        }
+
+        .book-block-aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
 }

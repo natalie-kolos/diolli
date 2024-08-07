@@ -105,7 +105,11 @@ form label {
 }
 
 .bg-white {
-  background-color: white;
+  background-color: white !important;
+}
+
+.bg-neutral {
+  background-color: #FAF7F2 !important;
 }
 
 .section-branded {
@@ -294,4 +298,65 @@ footer .footer-bottom p {
 }
 .slick-next::before {
   content: url("../img/icons/icon-next.svg");
+}
+
+.common-content {
+  background-color: white;
+  padding: 56px 0;
+}
+.common-content h2,
+.common-content h3,
+.common-content h4,
+.common-content h5 {
+  font-family: "DM Sans", sans-serif;
+  color: #0A4833;
+}
+
+blockquote {
+  margin: 32px;
+  padding: 32px;
+  border-left: 1px solid #CBA35E;
+  border-right: 1px solid #CBA35E;
+  font-style: italic;
+}
+
+.branded-quote {
+  padding: 280px 0;
+  background: linear-gradient(261deg, rgba(45, 83, 64, 0) 0.01%, rgba(45, 83, 64, 0.7) 99.99%), url("../img/img-team.jpg") lightgray 0px -889.825px/111.483% 384.39% no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.branded-quote h3 {
+  color: #FFF;
+  font-family: "Playfair Display";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.04px;
+  text-transform: uppercase;
+}
+
+.image-branded-full {
+  padding: 280px 0 140px;
+  background: linear-gradient(261deg, rgba(45, 83, 64, 0.7) 0.01%, rgba(45, 83, 64, 0.7) 99.99%), url("../img/img-team.jpg") lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.image-branded-full h3 {
+  color: #FFF;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.image-branded-full p {
+  color: #FFF;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
 }

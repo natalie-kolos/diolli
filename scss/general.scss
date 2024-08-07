@@ -74,6 +74,7 @@ form {
         letter-spacing: 3px;
         text-transform: uppercase;
         margin-bottom: 40px;
+
         @media (max-width: #{$mobile-sm}) {
             font-size: 1.5rem;
             margin-bottom: 24px;
@@ -117,7 +118,11 @@ form {
 }
 
 .bg-white {
-    background-color: white;
+    background-color: white !important;
+}
+
+.bg-neutral {
+    background-color: $neutral !important;
 }
 
 //section-branded
@@ -259,10 +264,11 @@ form {
                 z-index: -1;
             }
         }
+
         .content-intro {
-    
+
             @media (max-width: #{$mobile-sm}) {
-                
+
                 padding: 40px 0;
             }
         }
@@ -348,5 +354,68 @@ footer {
 
     &::before {
         content: url('../img/icons/icon-next.svg');
+    }
+}
+
+.common-content {
+    background-color: white;
+    padding: 56px 0;
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: $font-primary;
+        color: $primary;
+    }
+}
+
+blockquote {
+    margin: 32px;
+    padding: 32px;
+    border-left: 1px solid $secondary;
+    border-right: 1px solid $secondary;
+    font-style: italic;
+}
+
+.branded-quote {
+    padding: 280px 0;
+    background: linear-gradient(261deg, rgba(45, 83, 64, 0.00) 0.01%, rgba(45, 83, 64, 0.70) 99.99%), url('../img/img-team.jpg') lightgray 0px -889.825px / 111.483% 384.39% no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+        color: #FFF;
+        font-family: "Playfair Display";
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 3.04px;
+        text-transform: uppercase;
+    }
+}
+
+.image-branded-full {
+    padding: 280px 0 140px;
+    background: linear-gradient(261deg, rgba(45, 83, 64, 0.70) 0.01%, rgba(45, 83, 64, 0.70) 99.99%), url('../img/img-team.jpg') lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    h3 {
+        color: #FFF;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    p {
+        color: #FFF;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.7;
     }
 }
