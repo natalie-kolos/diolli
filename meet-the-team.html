@@ -151,11 +151,11 @@
             </div>
         </section>
         <section class="section-base">
-            <div class="container-fluid container-fluid-custom">
+            <div class="container">
                 <h3 class="title">Our Team</h3>
                 <div class="team">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                    <div class="row align-items-stretch">
+                        <div class="col-md-6 col-sm-6">
                             <div class="team-card">
 
                                 <img class="img-fluid" src="https://via.placeholder.com/410x410"
@@ -163,7 +163,28 @@
 
                                 <div class="team-card__description">
                                     <h4>Name Surname</h4>
-                                    <p>Description</p>
+                                    <div class="team-card__description__content">
+                                        <p>Svetlana is the Founder, leading matchmaker, and one of our premier dating
+                                            coaches at Diolli.com since 2008. Her personal blog can be found here:
+                                            Svetlanamukha.com. She is also the Founder of Paradisedate.com.ua, a dating
+                                            agency started in 2008, the Founder of the Premium Festival for Women
+                                            Kablooks.com, and the Creator of the educational platform for cupids
+                                            Cupidonduty.com. Svetlana is the owner of the educational website,
+                                            Ukrainecitytours.com which focuses on Ukraine and Ukrainian culture. In
+                                            addition, Svetlana keeps busy hosting a video blog on TikTok. Svetlana is
+                                            the co-author of the book “Secrets to drama free love” and the author of the
+                                            books: “7 principles of the brand-woman” (rus, ukr), “The 8th principle of
+                                            the brand-woman” (rus, ukr), “Nothing personal, just love” (rus, ukr),
+                                            “Nothing personal, just marriage” (rus, ukr), and “The 6th heart”.
+                                            Education: Masters Degree in Business Work Experience: Interpreter, dating
+                                            agency Language skills: Russian, English, Ukrainian, German, some French,
+                                            and Chinese Favorite Motto: “You should be kissed and kissed often, and by
+                                            someone who knows how.” —Margaret Mitchell, Gone With The Wind Fun fact:
+                                            Svetlana writes a blog about crazy dates. You can watch interviews with
+                                            Svetlana here.</p>
+                                    </div>
+                                    <div class="read-more">Read More</div>
+                        <div class="hide">Read Less</div>
                                     <ul class="navbar-nav social-icons mb-4">
                                         <li><a href="#"><img src="scss/img/icons/icon-fb-primary.svg" alt=""></a></li>
                                         <li><a href="#"><img src="scss/img/icons/icon-instagram-primary.svg" alt=""></a>
@@ -181,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="team-card">
 
                                 <img class="img-fluid" src="https://via.placeholder.com/410x410"
@@ -386,6 +407,30 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        // Ваш JavaScript код
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.previousElementSibling;
+                const hideButton = button.nextElementSibling;
+
+                content.style.maxHeight = 'none';
+                button.style.display = 'none';
+                hideButton.style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('.hide').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.previousElementSibling.previousElementSibling;
+                const readMoreButton = button.previousElementSibling;
+
+                content.style.maxHeight = '212px';
+                button.style.display = 'none';
+                readMoreButton.style.display = 'block';
+            });
+        });
+    </script>
 </body>
 
 </html>

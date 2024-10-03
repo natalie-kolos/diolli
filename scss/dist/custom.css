@@ -715,6 +715,14 @@ blockquote {
   gap: 10px;
   align-self: stretch;
   background-color: white;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.team .team-card .team-card__description .team-card__description__content {
+  max-height: 212px;
+  overflow: hidden;
+  position: relative;
 }
 .team .team-card .team-card__description h4 {
   text-align: center;
@@ -785,10 +793,18 @@ blockquote {
 }
 
 .reviews .review-block {
+  background-color: white;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
   padding: 48px 64px;
   padding-bottom: 24px;
-  background-color: white;
   margin-bottom: 40px;
+}
+.reviews .review-block .review-block-description {
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
 }
 .reviews .review-block p {
   font-size: 1.125rem;
@@ -801,6 +817,21 @@ blockquote {
   font-style: normal;
   font-weight: 500;
   line-height: 1.7;
+  margin-top: 16px;
+}
+
+.read-more,
+.hide {
+  cursor: pointer;
+  color: #0A4833;
+}
+.read-more:hover,
+.hide:hover {
+  opacity: 0.8;
+}
+
+.hide {
+  display: none;
 }
 
 .blog .blog-item {
