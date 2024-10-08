@@ -194,7 +194,7 @@ form {
         display: flex;
         gap: 10%;
         align-items: stretch;
-        padding: 120px 0;
+        padding: 56px 0;
 
         @media (max-width: #{$mobile-sm}) {
             flex-direction: column;
