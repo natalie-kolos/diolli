@@ -170,7 +170,7 @@ form label {
   display: flex;
   gap: 10%;
   align-items: stretch;
-  padding: 120px 0;
+  padding: 56px 0;
 }
 @media (max-width: 768px) {
   .section-branded .content-intro {
@@ -706,6 +706,22 @@ blockquote {
 .team .team-card img {
   margin-bottom: 0;
   width: 100%;
+}
+.team .team-card .team-card__img {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0;
+  display: flex;
+  width: 30%;
+}
+@media (max-width: 1199px) {
+  .team .team-card .team-card__img {
+    width: 100%;
+  }
+}
+.team .team-card .team-card__img img {
+  width: 100%;
+  height: auto;
 }
 .team .team-card .team-card__description {
   display: flex;

@@ -408,6 +408,23 @@
             width: 100%;
         }
 
+        .team-card__img {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 0;
+            display: flex;
+            width: 30%;
+
+            @media (max-width: #{$tablet-xl}) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
         .team-card__description {
             display: flex;
             padding: 44px;
@@ -550,22 +567,22 @@
 
     }
 
-    
+
 }
 
 .read-more,
-    .hide {
-        cursor: pointer;
-        color: $primary;
+.hide {
+    cursor: pointer;
+    color: $primary;
 
-        &:hover {
-            opacity: .8;
-        }
+    &:hover {
+        opacity: .8;
     }
+}
 
-    .hide {
-        display: none;
-    }
+.hide {
+    display: none;
+}
 
 .blog {
     .blog-item {
