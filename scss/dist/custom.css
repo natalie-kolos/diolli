@@ -208,6 +208,10 @@ form label {
   background-color: #0A4833;
   color: white;
 }
+.section-branded.section-branded-dark .content-intro_aside {
+  justify-content: center;
+  width: 100%;
+}
 .section-branded.section-branded-dark a {
   color: #CBA35E;
 }
@@ -235,6 +239,14 @@ form label {
 }
 .section-branded.section-branded-dark h4 {
   color: white;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section-branded.section-branded-dark h4 {
+    width: 80%;
+    margin-right: 10%;
+  }
 }
 .section-branded.section-branded-dark h3 {
   color: white;
@@ -722,6 +734,7 @@ blockquote {
 .team .team-card .team-card__img img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .team .team-card .team-card__description {
   display: flex;

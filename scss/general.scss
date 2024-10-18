@@ -242,6 +242,16 @@ form {
         background-color: $primary;
         color: white;
 
+
+
+
+        .content-intro_aside {
+            justify-content: center;
+            width: 100%;
+        }
+
+
+
         a {
             color: $secondary;
         }
@@ -275,6 +285,15 @@ form {
 
         h4 {
             color: white;
+
+            text-align: center;
+            width: 100%;
+
+            @media (min-width: #{$mobile-sm}) {
+                width: 80%;
+                margin-right: 10%;
+            }
+
         }
 
         h3 {
@@ -402,6 +421,7 @@ blockquote {
     background-size: cover;
     background-position: center;
     text-align: center;
+
     h3 {
         color: #FFF;
         font-size: 2rem;
@@ -411,6 +431,7 @@ blockquote {
         letter-spacing: 3px;
         text-transform: uppercase;
     }
+
     p {
         color: #FFF;
         font-size: 1.125rem;
